@@ -25,6 +25,9 @@
 	<!-- AUTHOR INFO -->
 	<?php get_template_part( 'dmg/author-info' ); ?>
 	<br/>
+	<!-- RELATED POSTS -->
+	<?php get_template_part( 'dmg/related-posts' ); ?>
+	<br/>
 	<!-- FACEBOOK COMMENT DIRECTION -->
 	<div class="fb-comments facebook-widget" data-href="<?php the_permalink(); ?>" data-numposts="5" data-colorscheme="light">
 	</div>
