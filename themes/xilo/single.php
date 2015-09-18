@@ -14,8 +14,6 @@ get_header(); ?>
 			<div class="col-md-8">
 				<main id="main" class="site-main" role="main">
 					<?php get_template_part( 'content', 'single' ); ?>
-
-					<?php inkness_content_nav( 'nav-below' ); ?>
 				</main><!-- #main -->
 			</div>
 			<div class="col-md-2"></div>
