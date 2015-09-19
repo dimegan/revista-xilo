@@ -658,22 +658,36 @@ header.carousel .fill {
   	margin-bottom: 10px;
   	margin-top: 15px;
 }
+.related-posts h3{
+	color: #000;
+	margin-bottom: 20px;
+}
  .related-item{  
-	border: solid 1px #ddd
+	border: solid 1px #ddd;
+	overflow: hidden;
 }
-.related-item img{
-	margin: 0 auto;
+.related-item img:hover {
+  -webkit-transform: scale(1.05);
+  opacity: 0.98;
 }
-.tittle-post-relation{
-  line-height: 24px;
-  text-decoration: none;
+.related-item img {
+  box-shadow: 0px 1px 2px #444;
+  margin-bottom: 0px;
+  transition: 0.4s all ease;
+  min-width: 100%;
+  margin: 0 auto;
+}
+.related-item a{
+	color: #000;
+	font-weight: bold;
 }
 .related-info{
 	padding: 10px;
-	height: 90px;
+	min-height: 90px;
 }
-.related-info .meta-data{
+.related-info .meta-data, .related-info .meta-data .fa-clock-o:before{
   	font-size: .9em;
+  	color: #999999 !important;
 }
 @media screen and (max-width: 768px) {
 	.related-item{  

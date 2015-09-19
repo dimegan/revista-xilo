@@ -1,3 +1,7 @@
+<?php 
+    $catSlider = get_option( "home_slider-cat", "aperturas" );
+    $postCounter = 0; 
+?>
 <header id="myCarousel" class="carousel slide" style="height:400px;">
     <!-- Indicators -->
     
@@ -6,9 +10,8 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
     	<?php
-		$postCounter = 0; 
-        //Mostrar solo los más recientes 4 posts
-        query_posts( 'posts_per_page=4' ); 
+        //Mostrar los 4 posts mas recientes de la categoría del slider
+        query_posts('category_name='.$catSlider.'&showposts=4');
     		while (have_posts()) : the_post(); ?>
         		<?php 
         			if (has_post_thumbnail()){

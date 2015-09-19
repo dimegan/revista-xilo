@@ -35,7 +35,10 @@
 							 		<a class="tittle-post-relation" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 							 	</span>
 							 	<br/>
-							 	<span class="meta-data"><?php the_time('j F, Y'); ?> </span>
+							 	<span class="meta-data">
+							 		<i class="fa fa-clock-o"></i>
+							 		<?php the_time('j F, Y'); ?> 
+							 	</span>
 						 	</div>
 						 </div>
 					 </div>
